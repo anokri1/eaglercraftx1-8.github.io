@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Interactive Moobloom</title>
+    <style>
+        .moobloom {
+            width: 100px;
+            height: 100px;
+            background-color: yellow;
+            border: 2px solid green;
+            border-radius: 10px;
+            position: relative;
+            cursor: pointer;
+        }
+        .flower {
+            width: 20px;
+            height: 20px;
+            background-color: pink;
+            border-radius: 50%;
+            position: absolute;
+            top: -10px;
+            left: 40px;
+        }
+    </style>
+</head>
+<body>
+    <div class="moobloom" onclick="interactWithMoobloom()">
+        <div class="flower"></div>
+    </div>
+    <script>
+        function interactWithMoobloom() {
+            alert("You interacted with the Moobloom!");
+        }
+    </script>
+</body>
+</html>
